@@ -79,6 +79,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 input, select, textarea { font-family: inherit; font-size: var(--fs-base); }
 em { font-style: italic; color: var(--clr-gold); }
 
+
+.logo__img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
 /* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--clr-neutral-100); }
