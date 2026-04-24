@@ -679,7 +679,7 @@ color: black;
   margin-bottom: .75rem;
   letter-spacing: -.02em;
 }
-.why__card:hover .why__num { color: rgb(255, 187, 0); }
+.why__card:hover .why__num { color: rgb(201, 168, 76); }
 .why__card h3 {
   font-family: var(--ff-display);
   font-size: var(--fs-xl);
