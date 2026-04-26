@@ -931,6 +931,110 @@ color: black;
 .contact__form-success { color: var(--clr-success); font-size: var(--fs-sm); font-weight: var(--fw-medium); text-align: center; margin-top: .5rem; }
 .contact__form-success i { margin-right: .5rem; }
 
+.contact__text {
+  background: var(--clr-white);
+  border: 1px solid var(--clr-neutral-100);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact__eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: var(--fw-semi);
+  color: var(--clr-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.contact__text h3 {
+  font-size: clamp(1.35rem, 1.8vw, 1.8rem);
+  font-weight: var(--fw-bold);
+  color: var(--clr-navy);
+  line-height: 1.25;
+  margin: 0;
+  max-width: 18ch;
+}
+
+.contact__lead {
+  font-size: var(--fs-md);
+  color: var(--clr-neutral-500);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 44ch;
+}
+
+.contact__info {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 520px) {
+  .contact__info {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact__info-item {
+  background: #faf8f2;
+  border: 1px solid rgba(201, 168, 76, 0.18);
+  border-radius: var(--radius-md);
+  padding: 0.95rem 1rem;
+}
+
+.contact__info-item strong {
+  display: block;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semi);
+  color: var(--clr-navy);
+  margin-bottom: 0.25rem;
+}
+
+.contact__info-item span {
+  display: block;
+  font-size: var(--fs-sm);
+  color: var(--clr-neutral-500);
+  line-height: 1.5;
+}
+
+.contact__text .btn {
+  align-self: center;
+  margin-top: 0.25rem;
+}
+
+.contact__text .btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #c9a84c, #e0c36d);
+  color: var(--clr-navy);
+  padding: 0.8rem 1.6rem;
+  border-radius: 50px;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semi);
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(201,168,76,0.25);
+  transition: all 0.25s ease;
+}
+
+.contact__text .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(201,168,76,0.35);
+}
+
+.contact__text .btn {
+  display: block;
+  width: 100%;
+  max-width: 320px;   /* Hmmm this took me way to long to fix */
+  margin: 0 auto;
+  text-align: center;
+}
+
+
 /* ── FOOTER ── */
 .footer { background: var(--clr-navy); color: var(--clr-neutral-300); padding-top: 4rem; }
 .footer__inner {
